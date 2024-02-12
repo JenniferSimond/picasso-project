@@ -23,6 +23,7 @@ body {
     height: auto;
 }
 
+/* HEADER - TOP BOX */
 .item-1 {   
     grid-column: 1/ span 5;
     background-color: #0F0B07;
@@ -30,25 +31,25 @@ body {
     /* color: #C3BCB5; */
     font: bold 2em/1.2 Oswald, sans-serif;
 }
-
+/* SPACE GUY */
 .item-2 {   
     grid-row: 2/ span 3;
     padding: 60px 15px 0 15px;
     background-color: #F64740;
 }
-
+/* CREATION OF ADAM IMAGE */
 .item-3 {   
     grid-column: 2 / span 2;
     grid-row: 2 /span 2;
 }
-
+/* SPINNERS */
 .item-4 {   
     grid-column: 4;
     grid-row: 2/ span 2;
     place-self: center;
    
 }
-
+/* ANDY WARHOL QUOTE */
 .item-5 {   
     place-self: center;
     grid-row: span 2;
@@ -83,21 +84,56 @@ body {
     font-weight: 300;
     font-size: 20px;
 }
+/* LEGO HULK IMAGE */
 .item-6 {   
     grid-column: 2 / span 3;
 }
-
+/* SQUARE WITH WITH PULSE */
 .item-7 {   
     grid-column: 5/6;
     place-self: center;
 }
-
+/* FORM AREA */
 .item-8 {
     grid-column: span 5;
     padding: 10px 0;
-    border: 5px solid #0F0B07;
+    background-color: darkgray;
 }
 
+label { 
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    color: #0F0B07;
+}
+
+.text { 
+   width: 15em;
+    margin: 10px;
+    border-radius: 3px;
+    border: 1px solid transparent;
+    
+}
+
+.check {    
+    margin-left: 10px;
+    accent-color: #593C8F;
+}
+
+.button {   
+    padding: .5em 1em;
+    border-radius: 5px;
+    background-color: #0F0B07;
+    color: white;
+    margin-left: 10px;
+    font-family: 'Roboto', sans-serif;
+    border: 1px solid darkslategray;
+   
+}
+
+input[type="checkbox"] {    
+    margin-right: 0;
+    padding-right: 0;
+}
 
 .hulk, .creation { 
     border-radius: 5px;
@@ -108,10 +144,12 @@ box-sizing: border-box;
  height: 200px;
  width: 200px;
 }
+/* POSTION INNER SQUARE DIVS TO FIXED FOR STACKING */
 .inner { 
   margin: 55px;
     position: fixed;
 }
+
 .spinner-1 {  
     background-color: #593C8F;
     opacity: .8;
