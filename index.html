@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&family=Roboto:wght@300;400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Art On The Grid</title>
+  </head>
+  <body>
+    <main class="container">
+      <div class="grid-item item-1">
+        <h1>ART RENDERED ON THE GRID</h1>
+      </div>
+      <div class="grid-item item-2">
+        <img src="./images/space-guy.svg" alt="" />
+      </div>
+      <div class="grid-item item-3">
+        <img class="creation" src="./images/creation.svg" alt="" />
+      </div>
+      <div class="grid-item item-4">
+        <div class="spin-box">
+          <div class="inner spinner-1"></div>
+          <div class="inner spinner-2"></div>
+          <div class="inner spinner-3"></div>
+        </div>
+      </div>
+      <div class="grid-item item-5">
+        <div class="art-quote">
+          <p class="quote">
+            <span class="text-span">Art</span> is anything you can get away
+            with!
+          </p>
+          <p class="andy">- Andy Warhol</p>
+        </div>
+      </div>
+      <div class="grid-item item-6">
+        <img class="hulk" src="./images/hulk.svg" alt="" />
+      </div>
+      <div class="grid-item item-7">
+        <div class="beat"></div>
+      </div>
+      <div class="grid-item item-8">
+        <form action="">
+          <input
+            type="text"
+            id="subscriber-name"
+            name="subscriber-name"
+            placeholder="First Name"
+          />
+          <input
+            type="email"
+            id="subscriber-email"
+            name="subscriber-email"
+            placeholder="Email"
+          />
+
+          <label for="subscribeNews">Newsletter</label>
+          <input type="checkbox" id="subscribeNews" name="subscribeNews" />
+          <label for="subscribeEvents">Events</label>
+          <input type="checkbox" id="subscribeEvents" name="subscribeEvents" />
+
+          <input type="submit" value="submit" />
+        </form>
+      </div>
+    </main>
+  </body>
+</html>

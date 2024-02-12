@@ -1,0 +1,186 @@
+body {  
+    text-align: center;
+    font-family: 'Oswald', sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+.container { 
+    display: grid;
+    grid-template-columns: repeat(5, 20%);
+    gap: 1rem;
+    max-width: 1100px;
+    padding: 40px 0 0 0;
+    margin: 0 auto;
+}
+
+.grid-item {    
+    border-radius: 5px;
+}
+
+.grid-item img {
+    width: 100%;
+    height: auto;
+}
+
+.item-1 {   
+    grid-column: 1/ span 5;
+    background-color: #0F0B07;
+    color: white;
+    /* color: #C3BCB5; */
+    font: bold 2em/1.2 Oswald, sans-serif;
+}
+
+.item-2 {   
+    grid-row: 2/ span 3;
+    padding: 60px 15px 0 15px;
+    background-color: #F64740;
+}
+
+.item-3 {   
+    grid-column: 2 / span 2;
+    grid-row: 2 /span 2;
+}
+
+.item-4 {   
+    grid-column: 4;
+    grid-row: 2/ span 2;
+    place-self: center;
+   
+}
+
+.item-5 {   
+    place-self: center;
+    grid-row: span 2;
+    grid-column: 5 /span 1;
+    background-color: #86C766;
+    color: #0F0B07;
+   
+}
+
+.art-quote {    
+    padding: 20px;
+}
+
+.quote { 
+    letter-spacing: 2px;
+    color: white;
+    line-height: 1.5em; 
+    text-align: left;
+    padding-left: 15px;
+    /* margin: 10px; */
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+}
+.text-span {    
+    color: #0F0B07;
+    font-weight: 200;
+    font-size: 80px;
+    font-family: 'Oswald', sans-serif;
+}
+.andy {
+    font-weight: 300;
+    font-size: 20px;
+}
+.item-6 {   
+    grid-column: 2 / span 3;
+}
+
+.item-7 {   
+    grid-column: 5/6;
+    place-self: center;
+}
+
+.item-8 {
+    grid-column: span 5;
+    padding: 10px 0;
+    border: 5px solid #0F0B07;
+}
+
+
+.hulk, .creation { 
+    border-radius: 5px;
+}
+
+.spin-box { 
+box-sizing: border-box;
+ height: 200px;
+ width: 200px;
+}
+.inner { 
+  margin: 55px;
+    position: fixed;
+}
+.spinner-1 {  
+    background-color: #593C8F;
+    opacity: .8;
+    width: 90px;
+    height: 90px;
+    border-radius: 9px;
+    animation: spin-clockwise 5s linear infinite;
+    z-index: 0;
+}
+
+.spinner-2 {    
+    width: 90px;
+    height: 90px;
+    border-radius: 9px;
+    background-color: #F64740;
+    opacity: .7;
+    animation: spin-counter-clockwise 6.5s linear infinite;
+    z-index: 2;
+}
+
+.spinner-3 {  
+    background-color: #86C766;
+    opacity: .8;
+    width: 90px;
+    height: 90px;
+    border-radius: 9px;
+    animation: spin-clockwise 6s linear infinite;
+    z-index: 3;
+}
+@keyframes spin-clockwise {
+    from {  
+        transform: rotate(0deg);
+      
+    }
+    to {    
+        transform: rotate(360deg);
+       
+    }
+}
+
+@keyframes spin-counter-clockwise {
+    from {  
+        transform: rotate(0deg);
+      
+    }
+    to {    
+        transform: rotate(-360deg);
+       
+    }
+}
+
+
+.beat{  
+    background-color: #593C8F;
+    width: 90px;
+    height: 90px;
+    border-radius: 9px;
+    animation: beat 3s ease-in-out infinite alternate;
+}
+
+@keyframes beat {    
+    0% {  transform: scale(1);
+        border-radius: 0;
+            
+        
+    }
+    100% {    
+        transform: scale(2);
+        border-radius: 50%;
+      
+    }
+}

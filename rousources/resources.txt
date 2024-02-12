@@ -1,0 +1,6 @@
+Animation: 
+    https://www.joshwcomeau.com/animation/keyframe-animations/
+
+    https://developer.mozilla.org/en-US/docs/Web/CSS/animation-composition
+
+Grid: https://css-tricks.com/snippets/css/complete-guide-grid/#prop-grid-area
