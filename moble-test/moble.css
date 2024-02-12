@@ -1,0 +1,216 @@
+body {  
+    text-align: center;
+    font-family: 'Oswald', sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+.container {   
+    display: grid; 
+    max-width: 768px;
+    grid-template-columns: repeat(2, 50%);
+    gap: .5em;
+    padding: 10px 5px;
+}
+
+.grid-item {    
+    border-radius: 5px;
+}
+
+.item-1 {
+    grid-column: 1/ span 2;
+    background-color: #0F0B07;
+    color: white;
+    font: bold 1em/1.2 Oswald, sans-serif;
+}
+
+.item-2 {   
+    grid-row: 2/ span 3;
+    grid-column: 1;
+    background-color: #F64740;
+    padding: 45px 10px 0px 10px;
+}
+
+.item-3 {    
+    grid-column: 2;
+    grid-row: 2;
+}
+
+.item-4 {
+    grid-column: 2;
+    grid-row: 3;
+}
+
+.hulk, .creation { 
+    border-radius: 5px;
+}
+
+.inner {    
+    position: fixed;
+    margin: 30px 0px 0px 80px;
+}
+
+
+.spin-box { 
+  
+    box-sizing: border-box;
+    width: 100px;
+    height: 100px;
+}
+
+.spinner-1 {  
+    background-color: #593C8F;
+    opacity: .8;
+    width:50px;
+    height:50px;
+    border-radius: 9px;
+    animation: spin-clockwise 5s linear infinite;
+    z-index: 0;
+}
+
+.spinner-2 {    
+    width:50px;
+    height:50px;
+    border-radius: 9px;
+    background-color: #F64740;
+    opacity: .7;
+    animation: spin-counter-clockwise 7s linear infinite;
+    z-index: 2;
+}
+
+.spinner-3 {  
+    background-color: #86C766;
+    opacity: .8;
+    width:50px;
+    height:50px;
+    border-radius: 9px;
+    animation: spin-clockwise 8s linear infinite;
+    z-index: 3;
+}
+
+@keyframes spin-clockwise {
+    from {  
+        transform: rotate(0deg);
+      
+    }
+    to {    
+        transform: rotate(360deg);
+       
+    }
+}
+
+@keyframes spin-counter-clockwise {
+    from {  
+        transform: rotate(0deg);
+      
+    }
+    to {    
+        transform: rotate(-360deg);
+       
+    }
+}
+
+.item-5 {
+    background-color: #86C766;
+    padding: 20px 0 0 10px;
+    line-height: 20px;
+    text-align: left;
+    grid-column: 2;
+    grid-row: 4;
+}
+
+.text-span {    
+    font-size: 4em;
+    color: #0F0B07;
+    font-weight: 200;
+    font-family: 'Oswald', sans-serif;
+}
+
+.andy {
+    margin: 20px 0 0 60px;
+    font-weight: 300;
+    font-size: 1em;
+}
+
+.quote {    
+    letter-spacing: 1px;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+}
+
+.art-quote {    
+    padding: 10px;
+}
+
+.item-6 {
+    grid-column: 1;
+    grid-row: 5;
+}
+
+.item-7 {    
+    grid-column: 2;
+    grid-row: 5;
+    place-self: center;
+}
+
+.beat{  
+    background-color: #593C8F;
+    width: 40px;
+    height: 40px;
+    border-radius: 9px;
+    animation: beat 3s ease-in-out infinite alternate;
+}
+
+@keyframes beat {    
+    0% {  transform: scale(1);
+        border-radius: 0;
+            
+        
+    }
+    100% {    
+        transform: scale(2);
+        border-radius: 50%;
+      
+    }
+}
+
+.item-8 {   
+   justify-items: start !important; 
+    grid-column: 1/ span 2;
+  background-color: darkgray;
+    padding: 10px 0;
+}
+form{   
+   margin-right: 5pxpx;
+}
+.text { 
+    width: 6em;
+     margin: 5px 5px 5px 0px;
+     border-radius: 3px;
+     border: 1px solid transparent; 
+ }
+
+ .check {    
+    
+    margin-left: 2px;
+    accent-color: #593C8F;
+}
+
+.button {   
+    padding: .5em .5em;
+    border-radius: 5px;
+    background-color: #0F0B07;
+    color: white;
+    margin-left: 5px;
+    font-family: 'Roboto', sans-serif;
+    border: 1px solid darkslategray;
+   font-size: 13px;
+}
+
+label { 
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    color: #0F0B07;
+    font-size: 12px;
+}
